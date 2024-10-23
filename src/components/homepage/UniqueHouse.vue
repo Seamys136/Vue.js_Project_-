@@ -1,6 +1,6 @@
 <template>
     <div class="banner">
-        <img class="banner-image" src="../../assets/Banner_One.png" alt="image">
+        <img class="banner-image" :src="imageUrl" :alt="altText">
         <div class="banner-text">
             <h1 class="title">Пусть ваш дом будет уникальным</h1>
             <p class="title-text">Существует много вариаций Lorem Ipsum, которые можно использовать</p>
@@ -13,6 +13,21 @@
 
 export default {
   name: 'UniqueHouse',
+  props: 
+    {
+    imageUrl: {
+      type: String,
+      required: true
+    },
+    altText: {
+      type: String,
+      default: 'img'
+    },
+    logoName: {
+    type: String,
+    required: true
+    },
+  }
 }
 </script>
 

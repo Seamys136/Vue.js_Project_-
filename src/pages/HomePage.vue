@@ -1,7 +1,7 @@
 <template>
     <div>
   
-        <UniqueHouse/>
+        <UniqueHouse :imageUrl="require('../assets/Banner_One.png')"/>/>
         <ProjectHome/>
         <CounterHome/>
         <BlogHome/>

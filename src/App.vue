@@ -4,8 +4,8 @@
 
       <CompHeader :imageUrl="require('../src/assets/LogoO.png')" logoName ="Interno"/> 
 
-      <BlogDetBanner/>
-
+      <BlogDetailsPage />
+      
       <CompFooter :imageUrl="require('../src/assets/LogoO.png')" logoName ="Interno"/>
 
     </div>
@@ -19,7 +19,8 @@
 
 import CompFooter from './components/CompFooter.vue';
 import CompHeader from './components/CompHeader.vue';
-import BlogDetBanner from '@/components/blogDetails/BlogDetBanner.vue';
+import BlogDetailsPage from './pages/BlogDetailsPage.vue';
+
 
 
 
@@ -28,7 +29,7 @@ export default {
   components: {
     CompHeader,
     CompFooter,
-    BlogDetBanner,
+    BlogDetailsPage,
   }
 }
 

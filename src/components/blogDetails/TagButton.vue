@@ -1,22 +1,19 @@
 <template>
-    <button class="tag-button" @click="emitTag">{{ tag }}</button>
+    <button class="tag-button" @click="handleClick">{{ tag }}</button>
   </template>
   
   <script>
   export default {
     props: {
-      tag: String
+      tag: {
+        type: String,
+        required: true,
+      },
     },
     methods: {
-      emitTag() {
-        this.$emit('tag-selected', this.tag);
-      }
-    }
-  }
+      handleClick() {
+        this.$emit('filter', this.tag);
+      },
+    },
+  };
   </script>
-  
-  <style scoped>
-  .tag-button {
-    margin: 5px;
-  }
-  </style>
