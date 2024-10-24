@@ -19,9 +19,8 @@
   
   <script>
   export default {
-    name: 'CompHeader',
-    props: 
-    {
+  name: 'CompHeader',
+  props: {
     imageUrl: {
       type: String,
       required: true

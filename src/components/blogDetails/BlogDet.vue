@@ -13,8 +13,6 @@
     </div>
       <p class="text">{{ textOne }}</p>
       <img class="banner-two" :src="imageUrlTwo" :alt="altText">
-      <h1 class="title">Design sprints are great</h1>
-      <p class="text">{{ textTwo }}</p>    
   </div>
 </template>
 
@@ -32,8 +30,7 @@ export default {
     },
 
   name: 'BlogDet',
-  props: 
-    {
+  props: {
     imageUrl: {
       type: String,
       required: true

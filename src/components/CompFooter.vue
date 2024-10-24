@@ -48,8 +48,7 @@
   <script>
   export default {
     name: 'CompFooter',
-    props: 
-    {
+    props: {
     imageUrl: {
       type: String,
       required: true

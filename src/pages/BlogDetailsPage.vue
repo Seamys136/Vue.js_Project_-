@@ -3,10 +3,11 @@
       <BlogDet :imageUrl="require('../assets/Banner.png')"
                :imageUrlOne="require('../assets/DetPhoto.png')"
                :textOne="textToShow"
-               :imageUrlTwo="require('../assets/Quotes.png')"
-               :textTwo="textToShowTwo"/>
-      <ParagraphsDet />        
-         
+               :imageUrlTwo="require('../assets/Quotes.png')"/> 
+               
+      <ParagraphsDet :textTwo="textToShowTwo"    
+               :imageUrlThree="require('../assets/Image .png')"     
+               :textThree="textToShowThree"/>
   </div>
 </template>
 
@@ -29,6 +30,7 @@ export default {
         'С того времени этот, похожий на латинский, текст стал стандартом в печатной промышленности для примеров шрифтов и текстов.',
         'С того времени этот, похожий на латинский, текст стал стандартом в печатной промышленности для примеров шрифтов и текстов.'
       ],
+      textToShowThree: 'В своей статье от 1994-го года журнал «Before & After» отследил фразу «Lorem ipsum ...» до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на латинском языке.'
     }
   }    
 };    
