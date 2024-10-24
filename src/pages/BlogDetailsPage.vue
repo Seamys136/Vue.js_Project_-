@@ -8,18 +8,21 @@
       <ParagraphsDet :textTwo="textToShowTwo"    
                :imageUrlThree="require('../assets/Image .png')"     
                :textThree="textToShowThree"/>
+      <ArticleList />         
   </div>
 </template>
 
 <script>
 import BlogDet from '@/components/blogDetails/BlogDet.vue';
 import ParagraphsDet from '@/components/blogDetails/ParagraphsDet.vue';
+import ArticleList from '@/components/blogDetails/ArticleList.vue';
 
 export default {
   name: 'BlogDetailsPage',
   components: {
     BlogDet,
     ParagraphsDet,
+    ArticleList,
   },
   data() {
     return {
