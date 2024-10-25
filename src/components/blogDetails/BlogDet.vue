@@ -6,29 +6,31 @@
     <div class="signature">
       <p class="date">26 Декабрь, 2022</p>
       <ul class="container">
-        <a class="link" href="#" v-for="(task, index) in tasks" :key="task.id">
+        <router-link class="link" to="/" exact>
+          Домой
+        </router-link>
+        <span v-if="tasks.length > 0"> / </span>
+        <a class="link" v-for="(task, index) in tasks" :key="task.id" :href="task.link || '#'">
           {{ task.name }}<span v-if="index < tasks.length - 1"> / </span>
         </a>
       </ul>
     </div>
-      <p class="text">{{ textOne }}</p>
-      <img class="banner-two" :src="imageUrlTwo" :alt="altText">
+    <p class="text">{{ textOne }}</p>
+    <img class="banner-two" :src="imageUrlTwo" :alt="altText">
   </div>
 </template>
 
 <script>
 export default {
-
   data() {
       return {
         tasks: [
           { id: 1, name: 'Интерьер' },
-          { id: 2, name: 'Домой' },
-          { id: 3, name: 'Декор' },
+          { id: 2, name: 'Декор' },
         ],
       };
     },
-
+  
   name: 'BlogDet',
   props: {
     imageUrl: {
@@ -60,14 +62,13 @@ export default {
 </script>
 
 <style scoped>
-
 .link {
     text-decoration: none;  
     color: inherit;        
 }
 
 .link:hover {
-    text-decoration: none; 
+    text-decoration: underline; 
     color: inherit;           
 }
 

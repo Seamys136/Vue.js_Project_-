@@ -70,8 +70,8 @@ export default {
   left: 850px;
   position: absolute;
   position: relative;
-  bottom: 1500px;
-  width: 200px;
+    bottom: 1500px;
+    width: 200px;
 }
 
 .tag-button {

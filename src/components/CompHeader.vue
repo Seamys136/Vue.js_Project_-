@@ -1,21 +1,22 @@
 <template>
-    <header class="header">
-      <div class="title-logo">
-        <img class="logo" :src="imageUrl" :alt="altText">{{ logoName }}
-        <ul class="menu-list">
-          <li class="menu-list-link">
-            <a class="link" href="#">Домой</a>
-          </li>
-          <li class="menu-list-link">
-            <a class="link" href="#">Проект</a>
-          </li>
-          <li class="menu-list-link">
-          <a class="link" href="#">Блог</a>
+  <header class="header">
+    <div class="title-logo">
+      <img class="logo" :src="imageUrl" :alt="altText">{{ logoName }}
+      <ul class="menu-list">
+        <li class="menu-list-link">
+          <router-link class="link" to="/">Домой</router-link>
+        </li>
+        <li class="menu-list-link">
+          <router-link class="link" to="/project">Проект</router-link>
+        </li>
+        <li class="menu-list-link">
+          <router-link class="link" to="/blog">Блог</router-link>
         </li>
       </ul>
-  </div>
-</header>
+    </div>
+  </header>
 </template>
+
   
   <script>
   export default {

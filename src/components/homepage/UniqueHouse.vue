@@ -75,9 +75,9 @@ export default {
         color: #fff;
         padding: 20px;
         position: relative;
-    bottom: 10px;
-    left: 0px;
-}
+        bottom: 10px;
+        left: 0px;
+    }
     
 
 </style>
